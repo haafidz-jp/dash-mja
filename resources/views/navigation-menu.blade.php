@@ -30,6 +30,13 @@
                         {{ __('Purchase Order') }}
                     </x-nav-link>
                 </div>
+                
+                <!-- PO Links -->
+                <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
+                    <x-nav-link href="{{ route('quotation') }}" :active="request()->routeIs('quotation')">
+                        {{ __('Quotation') }}
+                    </x-nav-link>
+                </div>
 
             </div>
 

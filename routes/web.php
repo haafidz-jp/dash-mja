@@ -33,4 +33,8 @@ Route::middleware([
     Route::get('/product', function () {
         return view('all-product');
     })->name('product');
+    
+    Route::get('/quotation', function () {
+        return view('all-quotation');
+    })->name('quotation');
 });
